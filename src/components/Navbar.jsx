@@ -6,6 +6,7 @@ const Navbar = () => {
 
     const [mobile, setMobile] = useState(false)
     const [navborder, setNavborder] = useState(false)
+    const [activenav, setActivenav] = useState("#home")
 
     window.addEventListener('scroll', ()=>{
         if(window.scrollY >= 550){
@@ -26,27 +27,39 @@ const Navbar = () => {
                         <ul className="nav__list" onClick={()=>setMobile(!mobile)}>
                             <li className="nav__item">
                                 <i className="uil uil-estate nav__icon"></i>
-                                <a href="#home" className='nav__link'>Home</a>
+                                <a href="#home" 
+                                onClick={()=>setActivenav('#home')} className={activenav === "#home" ? "nav__link active__link" : "nav__link"}
+                                >Home</a>
                             </li>
                             <li className="nav__item">
                                 <i className="uil uil-user nav__icon"></i>
-                                <a href="#about" className='nav__link'>About</a>
+                                <a href="#about" 
+                                onClick={()=>setActivenav('#about')} className={activenav === "#about" ? "nav__link active__link" : "nav__link"}
+                                >About</a>
                             </li>
                             <li className="nav__item">
                                 <i className="uil uil-file-alt nav__icon"></i>
-                                <a href="#skills" className='nav__link'>Skills</a>
+                                <a href="#skills" 
+                                onClick={()=>setActivenav('#skills')} className={activenav === "#skills" ? "nav__link active__link" : "nav__link"}
+                                >Skills</a>
                             </li>
                             <li className="nav__item">
                                 <i className="uil uil-scenery nav__icon"></i>
-                                <a href="#project" className='nav__link'>Projects</a>
+                                <a href="#project" 
+                                onClick={()=>setActivenav('#project')} className={activenav === "#project" ? "nav__link active__link" : "nav__link"}
+                                >Projects</a>
                             </li>
                             <li className="nav__item">
                                 <i className="uil uil-briefcase-alt nav__icon"></i>
-                                <a href="#service" className='nav__link'>Services</a>
+                                <a href="#service" 
+                                onClick={()=>setActivenav('#service')} className={activenav === "#service" ? "nav__link active__link" : "nav__link"}
+                                >Services</a>
                             </li>
                             <li className="nav__item">
                                 <i className="uil uil-message nav__icon"></i>
-                                <a href="#contact" className='nav__link active__link'>Contact</a>
+                                <a href="#contact" 
+                                onClick={()=>setActivenav('#contact')} className={activenav === "#contact" ? "nav__link active__link" : "nav__link"}
+                                >Contact</a>
                             </li>
                         </ul>
                     <button onClick={()=>setMobile(false)}><i className="uil uil-times nav__close"></i></button>
