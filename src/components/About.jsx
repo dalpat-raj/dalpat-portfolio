@@ -3,14 +3,15 @@ import banner2 from '../assets/banner2.png'
 
 const About = () => {
   return (
-    <div className='main__about container' id='about'>
+    <section className='main__about container' id='about'>
       <div className="about__section" >
-        <h2 data-heading="My Intro" className='section__title__heading'>About Me</h2>
+        <h2 data-aos="fade-down" data-heading="My Intro" className='section__title__heading'>About Me</h2>
 
         <div className="about__container">
-          <img src={banner2} alt="banner" className='about__img'/>
+          <img data-aos="fade-up"
+            src={banner2} alt="banner" className='about__img'/>
 
-          <div className="about__data">
+          <div data-aos="fade-up"className="about__data">
             <h3 className='about__heading'>Hi, I'am Dalpat Raj, Based in Rajsthan</h3>
             <p className='about__description'>Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
             <div className="about__info">
@@ -36,7 +37,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

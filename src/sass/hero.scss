@@ -1,10 +1,7 @@
 .home__main{
-    
-    img{
-        display: none;
-    }
+   
     .home__container{
-        height: 100vh;
+        // height: 100vh;
         background: url("../assets/banner.png")top center;
         background-size: cover;
         padding-left: 1rem;
@@ -12,6 +9,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 8rem;
+        padding-bottom: 1rem;
 
         .home__social{
             display: inline-flex;
@@ -80,22 +78,17 @@
 
 @media only screen and (max-width:768px){
     .home__main{
-        .tab__banner{
-            display: block;
-        }
-        .phone__banner{
-            display: none;
-        }
+       
         .home__container{
-            height: 100%;
-            background: none;
+            background-position:top right;
+            background-repeat: no-repeat;
+           
             padding-top: 2rem;
-            padding-left: 0;
-            position: absolute;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
             display: flex;
             flex-direction: column;
             row-gap: 4rem;
-            top: 0;
             .home__social{
                 .home__social__link{
                     padding: 0 0.5rem;
@@ -108,17 +101,18 @@
 
 @media only screen and (max-width:480px){
     .home__main{
-        // text-align: center;
-        .tab__banner{
-            display: none;
-        }
-        .phone__banner{
-            display: block;
-            
-        }
+        
         .home__container{
             padding-top: 1rem;
             row-gap: 7rem;
+            background: none;
+
+            .home__data{
+                .home__title{
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
 
             .my__info{
                 display: flex;

@@ -1,5 +1,6 @@
 .main__about{
-    padding: 6.5rem 0;
+    // padding-bottom: 0;
+    padding-top: 6.5rem;
     .about__section{
 
         .about__container{
@@ -54,25 +55,32 @@
 
 @media only screen and (max-width: 480px){
     .main__about{
-        padding: 5.5rem 0 !important;
+        padding-top: 5.5rem !important;
 
         .about__container{
-
-            .about__data{
-                .about__description{
-                    margin-bottom: 1rem !important;
+            grid-template-columns: repeat(1, 1fr);
+    
+                .about__img{
+                    display: block !important;
                 }
-                .about__info{
-                    margin-bottom: 1rem !important;
+    
+                .about__data{
+                    margin-top: 1rem;
+                    .about__description{
+                        margin-bottom: 1rem !important;
+                    }
+                    .about__info{
+                        margin-bottom: 1rem !important;
+                    }
                 }
-            }
+            
         }
     }
 }
 
 @media only screen and (max-width: 768px){
     .main__about{
-        padding: 3.5rem 0;
+        padding-top: 3.5rem;
         .about__section{
             .about__title__heading{
                 margin-bottom: 2rem;
@@ -83,7 +91,6 @@
                 display: block;
                 .about__img{
                     width: 100%;
-                    // visibility: hidden;
                     display: none;
                 }
                 .about__data{

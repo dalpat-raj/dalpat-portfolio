@@ -1,5 +1,5 @@
 footer{
-    // padding: 6.5rem 0;
+    margin-top: 6.5rem;
     padding: 2rem 0 4.5rem;
     background: $box-color;
 
@@ -33,7 +33,7 @@ footer{
             justify-self: flex-end;
             .footer__social{
                 font-size: 1.25rem;
-                margin-right: 1.5rem;
+                margin-left: 1.5rem;
                 color: $title-color;
                 &:hover{
                     color: $primary;
@@ -52,6 +52,7 @@ footer{
 
 @media only screen and (max-width:768px){
     footer{
+        margin-top: 3.5rem;
         padding: 2rem 0 5rem;
     
         .footer__container__grid{
@@ -71,7 +72,7 @@ footer{
                 row-gap: 1rem;
                 .footer__social{
                     font-size: 1.25rem;
-                    margin-right: 1.5rem;
+                    margin-right: 0;
                     
                 }
             }

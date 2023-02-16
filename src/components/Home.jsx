@@ -1,34 +1,46 @@
 import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 import { UilUser } from '@iconscout/react-unicons'
-import tabbanner from '../assets/tabbanner.png'
-import phonebanner from '../assets/phonebanner.png'
 
 
 const Home = () => {
   return (
     <main id='home' className='home__main container'>
-      <img src={tabbanner} alt="logo" className='tab__banner'/>
-      <img src={phonebanner} alt="logo" className='phone__banner'/>
+      <div className='phone__banner'></div>
         <section className='home' id='home'>
             <div className="home__container ">
 
                 <div className="home__social">
                   <span className='home__social__follow'>Follow Me</span>
                   <div className="home__social__links">
-                    <a href="https://www.facebook.com/" className='home__social__link'>
+                    <a data-aos="fade-left" href="https://www.facebook.com/dalpatraj.dadawat.5/" className='home__social__link'>
                     <i className="uil uil-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/raj_dalpat_" className='home__social__link'>
+                    <a data-aos="fade-left" href="https://www.instagram.com/raj_dalpat_" className='home__social__link'>
                     <i className="uil uil-instagram"></i>
                     </a>
-                    <a href="https://twitter.com/" className='home__social__link'>
+                    <a data-aos="fade-left" href="https://twitter.com/" className='home__social__link'>
                     <i className="uil uil-twitter-alt"></i>
                     </a>
                   </div>
                 </div>     
 
                 <div className="home__data">
-                  <h1 className='home__title'>Hi, I'am Dalpat Raj</h1>
+                  <h1 className='home__title'>Hi, I'am&nbsp;
+                  <Typewriter
+                    words={['Dalpat Raj', 'Developer', 'Coder', 'Web Designer']}
+                    loop={Infinity}
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                    cursorBlinking={true}
+                    cursorColor={"#E1094A"}
+                    // onLoopDone={handleDone}
+                    // onType={handleType}
+                  />
+                  </h1>
                   <h3 className='home__subtitle'>Frontend Devloper</h3>
                   <p className='home__description'>high level experience in web design and devlopment knowledge,
                   prodecing qualiy work.</p>

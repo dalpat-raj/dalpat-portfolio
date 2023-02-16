@@ -1,5 +1,6 @@
 .skill__main__section{
-    padding: 0 0;
+    padding-top: 6.5rem;
+    // padding-bottom: 0;
     .skill__container{
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -98,6 +99,7 @@
 
 @media only screen and (max-width: 768px){
     .skill__main__section{
+        padding-top: 3.5rem;
         .skill__container{
             grid-template-columns: repeat(1, 100%);
             row-gap: 2rem;
@@ -118,6 +120,7 @@
 
 @media only screen and (max-width: 576px){
     .skill__main__section{
+        padding-top: 5.5rem !important;
         .skill__container{
             grid-template-columns: repeat(1, 100%);
             row-gap: 2rem;

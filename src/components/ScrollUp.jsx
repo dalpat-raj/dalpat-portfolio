@@ -7,7 +7,6 @@ const ScrollUp = () => {
   window.addEventListener('scroll', function () {
     if(this.scrollY >= 572) setShowScroll(true)
     else setShowScroll(false)
-    console.log(this.scrollY);
   })
 
   return (

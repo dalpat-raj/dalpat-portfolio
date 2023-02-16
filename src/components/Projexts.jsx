@@ -51,7 +51,7 @@ const Projexts = () => {
 
   return (
     <section className='project__section container' id='project'>
-        <h2 data-heading="My Portfolio" className='section__title__heading'>Recent Work</h2>
+        <h2 data-aos="fade-down" data-heading="My Portfolio" className='section__title__heading'>Recent Work</h2>
 
         <div className="work__filters">
             <span className="work__item active__work">All</span>
@@ -64,7 +64,7 @@ const Projexts = () => {
 
             {
                 obj.map((item)=>(
-                    <div className="work__card" key={item.id}>
+                    <div data-aos="fade-up" className="work__card" key={item.id}>
                         <img src={item.img} alt="work" className='work__img' />
                         <h3 className='work__title'>{item.work__title}</h3>
                         <span className="work__button" id={item.id} onClick={handleChange} >Demo 

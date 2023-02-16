@@ -4,11 +4,11 @@ const Skills = () => {
 
     return(
         <section className="skill__main__section container" id="skills">
-            <h2 data-heading="My Abilities" className="section__title__heading">My Experience</h2>
+            <h2 data-aos="fade-down" data-heading="My Abilities" className="section__title__heading">My Experience</h2>
 
             <div className="skill__container">
 
-                <div className="skill__content">
+                <div data-aos="fade-up"  className="skill__content">
                     <h3 className="skill__title"><i className="uil uil-brackets-curly skill__icon"></i> Frontend developer</h3>
 
                     <div className="skill__box">
@@ -70,7 +70,7 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div className="skill__content">
+                <div data-aos="fade-up" className="skill__content" >
                     <h3 className="skill__title"><i className="uil uil-swatchbook skill__icon"></i> Design</h3>
 
                     <div className="skill__box">
@@ -97,7 +97,7 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div className="skill__content">
+                <div data-aos="fade-up"  className="skill__content">
                     <h3 className="skill__title"><i className="uil uil-server-network skill__icon"></i> Backend devloper</h3>
 
                     <div className="skill__box">
