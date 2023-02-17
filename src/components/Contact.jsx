@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+
 
 const Contact = () => {
+    const form = useRef();
+    const [clientMsg, setClientMsg] = useState(null)
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_5967k0s', 'template_9z7c2la', form.current, 'zW2qo1R1M7dda8MmW')
+        .then((result) => {
+            setClientMsg('Massege Successfully Send')
+        }, (error) => {
+          throw error;
+        });
+    };
+
   return (
     <section className="contact__section container" id="contact">
         <h2 data-aos="fade-down" data-heading="Get in touch" className="section__title__heading">Contact Me</h2>
@@ -39,7 +55,8 @@ const Contact = () => {
             </div>
 
             <div className="contact__content">
-                <form className="contact__info">
+                <form ref={form} onSubmit={sendEmail} className="contact__info">
+                    <h2>{clientMsg? clientMsg: ""}</h2>
                     <div data-aos="fade-up" className="input___container focus">
                         <input type="text" className="input" />
                         <label htmlFor="">Username</label>
@@ -58,7 +75,7 @@ const Contact = () => {
                         <span>Phone</span>
                     </div>
 
-                    <div data-aos="fade-up" className="input___container textarea">
+                    <div data-aos="fade-up" className="input___container textarea focus">
                         <textarea name="" id="" className='input' />
                         <label htmlFor="">Message</label>
                         <span>Message</span>

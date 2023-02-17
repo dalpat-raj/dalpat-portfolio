@@ -6,25 +6,25 @@ const Projexts = () => {
     const obj = [
         {
             id: 1,
-            work__title: 'App Design',
-            img: '/images/work-1.webp',
-            detail__title: 'App Design',
-            detail__description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quis totam iusto quasi!',
-            created: '4 dec 2020',
-            technologies: 'html css',
-            role: 'frontend',
-            view: 'www.resumebuildin.com'
+            work__title: 'Resume Maker',
+            img: '/images/work-2.png',
+            detail__title: 'Design & Devlope',
+            detail__description: 'This is my first live project in which both frontend and backend have been done by me and deployed on VPS server.',
+            created: '26 jan 2023',
+            technologies: 'React JavaScript Html Sass',
+            role: 'Frontend & Backend',
+            view: 'https://resumebuildin.com/'
         },
         {
             id: 2,
-            work__title: 'Design',
-            img: '/images/work-2.webp',
-            detail__title: 'Design',
-            detail__description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quis totam iusto quasi!',
-            created: '4 dec 2020',
-            technologies: 'react html css',
+            work__title: 'Web Design',
+            img: '/images/work-1.png',
+            detail__title: 'Github Project',
+            detail__description: 'in this project i intigration API with javaScript You You can also check my code',
+            created: '22 dec 2021',
+            technologies: 'html css JavaScript',
             role: 'frontend',
-            view: 'www.resumebuildin.com'
+            view: 'github.com/dalpat-raj'
         },
         {
             id: 3,
@@ -35,7 +35,7 @@ const Projexts = () => {
             created: '4 dec 2020',
             technologies: 'html css java script',
             role: 'backend',
-            view: 'www.resumebuildin.com'
+            view: 'resumebuildin.com'
         },
     ]
 

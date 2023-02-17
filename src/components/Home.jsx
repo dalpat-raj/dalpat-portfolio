@@ -1,6 +1,5 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-import { UilUser } from '@iconscout/react-unicons'
 
 
 const Home = () => {
@@ -44,7 +43,7 @@ const Home = () => {
                   <h3 className='home__subtitle'>Frontend Devloper</h3>
                   <p className='home__description'>high level experience in web design and devlopment knowledge,
                   prodecing qualiy work.</p>
-                  <a href="#about" className='button'><UilUser/>More About Me</a>
+                  <a href="MyResume.pdf" download="MyResume.pdf" className='button'><i className='uil uil-download-alt'></i>Download Resume</a>
                 </div>
 
                 <div className="my__info">

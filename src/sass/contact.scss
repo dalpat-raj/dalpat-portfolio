@@ -55,7 +55,7 @@
             .input___container{
                 position: relative;
                 margin-top: .1rem;
-                margin-bottom: 1rem;
+                margin-bottom: 0.6rem !important;
                 .input{
                     width: 100%;
                     border: 2px solid $text-color;
@@ -139,6 +139,13 @@
                     transform: translateY(0);
                 }
             }
+            .textarea.focus label{
+                top: 0;
+                transform: translateY(-50%);
+                left: 25px;
+                font-size: $smaller-font-size;
+            }
+            
         }
     }
 }

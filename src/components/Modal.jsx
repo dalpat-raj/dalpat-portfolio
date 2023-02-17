@@ -23,7 +23,7 @@ const Modal = ({item, value}) => {
                 <li>Created - <span>{created}</span></li>
                 <li>Technologies - <span>{technologies}</span></li>
                 <li>Role - <span>{role}</span></li>
-                <li>View - <span><a href={view}>{view}</a></span></li>
+                <li>View - <a  href={view}>{view}</a></li>
             </ul>
             <i onClick={value} className="uil uil-times close__icon"></i>
         </div>
