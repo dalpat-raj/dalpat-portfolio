@@ -9,7 +9,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_5967k0s', 'template_9z7c2la', form.current, 'zW2qo1R1M7dda8MmW')
+      emailjs.sendForm('service_nvadutb', 'template_wlrj4ys', form.current, 'zW2qo1R1M7dda8MmW')
         .then((result) => {
             setClientMsg('Massege Successfully Send')
         }, (error) => {
@@ -58,25 +58,25 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="contact__info">
                     <h2>{clientMsg? clientMsg: ""}</h2>
                     <div data-aos="fade-up" className="input___container focus">
-                        <input type="text" className="input" />
+                        <input type="text" name='name' className="input" />
                         <label htmlFor="">Username</label>
                         <span>Username</span>
                     </div>
 
                     <div data-aos="fade-up" className="input___container focus">
-                        <input type="text" className="input" />
+                        <input type="text" name='email' className="input" />
                         <label htmlFor="">Email</label>
                         <span>Email</span>
                     </div>
 
                     <div data-aos="fade-up" className="input___container focus">
-                        <input type="tel" className="input" />
+                        <input type="tel" name='phone' className="input" />
                         <label htmlFor="">Phone</label>
                         <span>Phone</span>
                     </div>
 
                     <div data-aos="fade-up" className="input___container textarea focus">
-                        <textarea name="" id="" className='input' />
+                        <textarea type="text" name="message" id="" className='input' />
                         <label htmlFor="">Message</label>
                         <span>Message</span>
                     </div>

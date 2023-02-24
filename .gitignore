@@ -4,14 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+/public
+/src
+/README.md
+/package-lock.json
+/package.json
 
 # testing
 /coverage
-/src
-/public
-/README.md
-/package-lock.json
-package.json
+
 
 # production
 
